@@ -29,7 +29,6 @@ form.addEventListener("submit", async (e) => {
   const result = await submitForm(formData);
 
   if (result.status === "error") {
-    console.log(result);
     displayErrors(result.fields || {});
     messageContainer.textContent = result.msg || "Ошибка отправки формы";
   } else if (result.status === "success") {
@@ -50,7 +49,6 @@ function displayErrors(errors) {
 }
 
 document.addEventListener("input", (e) => {
-  console.log(2);
   if (e.target.parentNode.classList.contains("error")) {
     e.target.parentNode.classList.remove("error");
   }
@@ -60,7 +58,6 @@ const ModalBack = document.querySelector(".bg-wrapper");
 const Modal = document.querySelector(".modal");
 
 function showModal() {
-  console.log(1);
   ModalBack.classList.add("active");
   Modal.classList.add("active");
   document.body.style.setProperty(
