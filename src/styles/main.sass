@@ -6,12 +6,15 @@
 
 body
   min-height: 100vh
+  width: 100%
 
 #app
   margin-top: 100px
   display: flex
   justify-content: center
   align-items: center
+  flex-direction: column
+  gap: 50px
 
 .feedback-form
   position: relative
@@ -113,3 +116,8 @@ body
 
   &:hover::after
     box-shadow: 0 4px 20px 5px rgba(255, 255, 255, 0.4)
+
+.scroll-stop
+  position: fixed
+  overflow-y: scroll
+  top: var(--st, 0)

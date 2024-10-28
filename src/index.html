@@ -25,13 +25,13 @@
       <label class="input">
         <img src="./assets/images/name.png" alt="" class="input-icon" />
 
-        <input type="text" name="name" id="name" class="input-field" placeholder="Имя" required />
+        <input type="text" name="name" id="name" class="input-field" placeholder="Имя" />
         <span class="input-error"></span>
 
       </label>
       <label class="input">
         <img src="./assets/images/mail.png" alt="" class="input-icon" />
-        <input type="email" name="email" id="email" class="input-field" placeholder="Email" required />
+        <input type="email" name="email" id="email" class="input-field" placeholder="Email" />
         <span class="input-error"></span>
 
 
@@ -39,13 +39,13 @@
 
       <label class="input ">
         <img src="./assets/images/phone.png" alt="" class="input-icon" />
-        <input type="tel" name="tel" id="tel" class="input-field" placeholder="Телефон" required />
+        <input type="tel" name="tel" id="tel" class="input-field" placeholder="Телефон" />
         <span class="input-error">error</span>
 
       </label>
 
       <label class="input">
-        <textarea name="message" id="message" class="input-field" placeholder="Сообщение" required></textarea>
+        <textarea name="message" id="message" class="input-field" placeholder="Сообщение"></textarea>
         <span class="input-error"></span>
 
       </label>
@@ -53,6 +53,31 @@
       <button type="submit" class="btn form-btn">Отправить</button>
 
     </form>
+
+    <div class="message-box"></div>
+
+    <button class="btn" id="btn-modal">Открыть модальное окно</button>
+
+    <div class="bg-wrapper">
+      <div class="modal">
+        <div class="modal-close">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 19.5L19.5 1M1 1L19.5 19.5" stroke="white" stroke-opacity="0.75" />
+          </svg>
+
+
+        </div>
+
+        <div class="modal-title">
+          Заголовок
+        </div>
+        <div class="modal-subtitle">
+          Текст
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </body>
 
