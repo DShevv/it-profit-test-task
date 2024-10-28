@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>itprofit test task</title>
+</head>
+
+<body>
+  <div id="app">
+    <form class="feedback-form ">
+
+
+      <h1 class="form-title">
+        Связаться с нами
+      </h1>
+
+      <label class="input">
+        <img src="./assets/images/name.png" alt="" class="input-icon" />
+
+        <input type="text" name="name" id="name" class="input-field" placeholder="Имя" required />
+        <span class="input-error"></span>
+
+      </label>
+      <label class="input">
+        <img src="./assets/images/mail.png" alt="" class="input-icon" />
+        <input type="email" name="email" id="email" class="input-field" placeholder="Email" required />
+        <span class="input-error"></span>
+
+
+      </label>
+
+      <label class="input ">
+        <img src="./assets/images/phone.png" alt="" class="input-icon" />
+        <input type="tel" name="tel" id="tel" class="input-field" placeholder="Телефон" required />
+        <span class="input-error">error</span>
+
+      </label>
+
+      <label class="input">
+        <textarea name="message" id="message" class="input-field" placeholder="Сообщение" required></textarea>
+        <span class="input-error"></span>
+
+      </label>
+
+      <button type="submit" class="btn form-btn">Отправить</button>
+
+    </form>
+  </div>
+</body>
+
+</html>
